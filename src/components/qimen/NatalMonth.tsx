@@ -62,6 +62,14 @@ export function NatalMonth({
               本命盘 {trend.natal.label} · 日主落{trend.natal.palace} · {trend.natal.door} · {TONE[trend.natal.tone]}
             </p>
           </article>
+          <div className="mt-3 flex flex-col gap-2">
+            {trend.life.map((line) => (
+              <article key={line.title} className="rounded-xl border border-gold/40 bg-paper/5 p-3">
+                <h3 className="text-lg text-gold">{line.title}</h3>
+                <p className="mt-1 text-sm leading-relaxed text-paper/90">{line.body}</p>
+              </article>
+            ))}
+          </div>
           <div className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
             {trend.seats.map((seat) => (
               <article key={seat.role} className="rounded-xl border border-gold/40 bg-paper/5 p-3">

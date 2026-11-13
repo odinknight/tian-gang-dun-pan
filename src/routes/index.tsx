@@ -153,7 +153,8 @@ function Chip({ label, value }: { label: string; value: string }) {
 function Detail({ palace, sizheng }: { palace: PalaceView; sizheng: string }) {
   return (
     <aside className="rounded-xl border border-gold/40 bg-paper/5 p-4">
-      <h2 className="text-xl">
+      <p className="border-b border-gold/30 pb-3 text-sm text-paper/90">{sizheng}</p>
+      <h2 className="mt-3 text-xl">
         {palace.name}宫
         <span className="ml-2 text-sm font-sans text-paper/60">{palace.dir}</span>
       </h2>
@@ -165,7 +166,6 @@ function Detail({ palace, sizheng }: { palace: PalaceView; sizheng: string }) {
           </li>
         ))}
       </ul>
-      <p className="mt-4 border-t border-gold/30 pt-3 text-sm text-paper/75">{sizheng}</p>
     </aside>
   );
 }

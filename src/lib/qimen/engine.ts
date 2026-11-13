@@ -561,7 +561,6 @@ export function buildChart(when: Date): Chart {
     palaces,
     shengMenId: sheng?.id ?? 1,
     briefs: buildBriefs(palaces, yang, pillars.hour[1] ?? "子"),
-    sizheng:
-      "阳遁十神：甲官、乙禄、丙财、丁斗、戊业、己力、庚刀、辛兵、壬世、癸变。阴遁十二将：子偏官、丑业、寅官、卯禄、辰力、巳财、午斗、未世、申刀、酉兵、戌变、亥偏禄。盘下随本局阴阳列出。吉门入死地则不吉，凶门入死地则气平。用盘之前，先问这一步是不是正言、正行、正心。",
+    sizheng: "先问四正：正心、正身、正言、正行。吉门入死地则不吉，凶门入死地则气平。",
   };
 }
